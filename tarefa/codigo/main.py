@@ -10,7 +10,7 @@ def titanic(Sex:int, Age:float, Lifeboat: int,Pclass:int):
 
     resp = titanic.predict([[Sex, Age, Lifeboat, Pclass]])    
 
-    if( resp):
+    if(resp):
         return  {"survived": True,	"status": 200,	"message": "The passanger has lived." }
     else: 
         return {"survived": False,	"status": 200,	"message": "The passanger has died." }
